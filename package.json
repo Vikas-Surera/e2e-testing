@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "e2e": "jest --detectOpenHandles",
+    "e2e": "jest --testTimeout=60000 --detectOpenHandles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
