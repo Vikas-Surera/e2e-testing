@@ -1,8 +1,5 @@
 name: E2E Testing
-on:
-  push:
-    branches:
-      - release
+on: push
 
 jobs:
   jest-puppeteer:
