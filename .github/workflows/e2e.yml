@@ -1,0 +1,19 @@
+name: E2E Testing
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  jest-puppeteer:
+    name: Jest Puppeteer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Running tests
+        run: npm run e2e
